@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     // init feather icons
     feather.replace();
@@ -8,7 +8,7 @@ $(function () {
     $('[data-toggle="popover"]').popover();
 
     //page scroll
-    $('a.page-scroll').bind('click', function (event) {
+    $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 20
@@ -28,7 +28,7 @@ $(function () {
 
     //toggle scroll menu
     var scrollTop = 0;
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         //adjust menu background
         if (scroll > 80) {
@@ -54,7 +54,7 @@ $(function () {
     });
 
     // scroll top top
-    $('.scroll-top').click(function () {
+    $('.scroll-top').click(function() {
         $('html, body').stop().animate({
             scrollTop: 0
         }, 1000);
